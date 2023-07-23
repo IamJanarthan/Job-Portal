@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+    <div id="user-section">
+        <button id="login-button">Login</button>
+        <button id="create-account-button">Create Account</button>
+      </div>
+  </header>
+
+    
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+          <h2>Login</h2>
+          <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    
+      
+      <div id="create-account-popup" class="popup">
+        <div class="popup-content">
+          <h2>Create Account</h2>
+          <form id="create-account-form">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" required>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" required>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+      </div>
+  
+  <!-- <section id="search-section">
+    <input type="text" id="search-input" placeholder="Search jobs...">
+    <button id="search-button">Search</button>
+  </section> -->
+  
+  <section id="filter-section">
+    
+    <h2>Filter By:</h2>
+
+    <input type="text" id="search-input" placeholder="Search jobs...">
+    <button id="search-button">Search</button>
+    <label for="filter-type">Job Type:</label>
+
+    <select id="filter-type">
+      <option value="">All</option>
+      <option value="full-time">Full-time</option>
+      <option value="part-time">Part-time</option>
+      <option value="contract">Contract</option>
+    </select>
+
+    <label for="filter-location">Location:</label>
+    <select id="filter-location">
+      <option value="">All</option>
+      <option value="madurai">Madurai</option>
+      <option value="chennai">Chennai</option>
+      <option value="coimbatore">Coimbatore</option>
+      <option value="bangalore">Bangalore</option>
+      <option value="delhi">Delhi</option>
+    </select>
+    
+  </section>
+  
+  <section id="job-listings">
+    
+
+    
+  </section>
+  
+  <div id="modal-overlay" class="hidden"></div>
+  
+  <div id="apply-modal" class="hidden">
+    <div id="apply-modal-content">
+      <h2>Apply for Job</h2>
+      <form id="job-application-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" required>
+        <button type="submit">Apply</button>
+      </form>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  
+  <section id="pagination-section"></section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+

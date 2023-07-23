@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #search-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #search-input {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #filter-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  #filter-section label,
+  #filter-section select {
+    margin: 10px;
+  }
+  
+  #job-listings {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .job-listing {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  
+  #apply-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 101;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #apply-modal-content {
+    text-align: center;
+  }
+  
+  #apply-modal h2 {
+    margin-top: 0;
+  }
+  
+  #apply-modal label,
+  #apply-modal input,
+  #apply-modal button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+  }
+  
+  #apply-modal button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #apply-modal button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  #apply-modal button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  #apply-modal button[type="submit"]:active {
+    background-color: #222;
+  }
+  
+  #close-modal {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  #close-modal:hover {
+    color: #555;
+  }
+  
+  #close-modal:focus {
+    outline: none;
+  }
+  
+  #pagination-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #pagination-section button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #pagination-section button:focus {
+    outline: none;
+  }
+  
+  #pagination-section button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #user-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup form {
+    margin-top: 20px;
+  }
+  
+  .popup label,
+  .popup input,
+  .popup button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+  }
+  
+  .popup button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .popup button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .popup button[type="submit"]:focus {
+    outline: none;
+  }
+
+  
+
+#login-popup .popup-content,
+#create-account-popup .popup-content {
+  max-width: 300px;
+}
+
+#login-popup h2,
+#create-account-popup h2 {
+  text-align: center;
+}
+
+#login-form,
+#create-account-form {
+  text-align: center;
+}
+
+#login-form label,
+#create-account-form label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+#login-form input,
+#create-account-form input,
+#login-form button[type="submit"],
+#create-account-form button[type="submit"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup button[type="submit"] {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup button[type="submit"]:hover {
+  background-color: #333;
+}
+
+#login-popup-content,
+#create-account-popup-content {
+  padding: 20px;
+}
+
+.popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+.popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  
+  .popup-content {
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+   
